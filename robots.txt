@@ -1,0 +1,5 @@
+# This site is unlisted and marked noindex on every page.
+# Crawling is intentionally allowed so compliant search engines can read
+# the noindex directive; blocking the crawl would prevent them from seeing it.
+User-agent: *
+Allow: /

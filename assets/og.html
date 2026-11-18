@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #0b1f31;
+    color: #fff;
+    font-family: "Lato", "Segoe UI", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 62px 72px 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:
+      radial-gradient(760px 460px at 88% -8%, rgba(37, 106, 156, 0.7) 0%, rgba(37, 106, 156, 0) 66%),
+      linear-gradient(180deg, #0b1f31 0%, #0e2439 100%);
+  }
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,.09) 1px, transparent 1px);
+    background-size: 28px 28px;
+    opacity: .3;
+    mask-image: linear-gradient(180deg, #000 0%, transparent 70%);
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .top { position: relative; z-index: 1; }
+  .eyebrow {
+    font-size: 14px; font-weight: 900; letter-spacing: .28em;
+    text-transform: uppercase; color: #7fb2d9;
+  }
+  h1 {
+    margin: 22px 0 20px;
+    font-size: 106px; font-weight: 900; line-height: .94;
+    letter-spacing: -.035em;
+  }
+  .role {
+    font-size: 17px; font-weight: 700; letter-spacing: .13em;
+    text-transform: uppercase; color: #b7d2e7;
+    max-width: 900px; line-height: 1.5;
+  }
+  .blurb {
+    margin-top: 28px;
+    max-width: 880px;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #c9d9e6;
+  }
+  .bottom {
+    position: relative; z-index: 1;
+    display: flex; align-items: flex-end; justify-content: space-between;
+    gap: 30px; padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, .17);
+  }
+  .stats { font-size: 18px; font-weight: 300; color: #dce7f0; }
+  .stats b { font-weight: 900; color: #fff; }
+  .stats span { color: #6f8ca5; padding: 0 10px; }
+  .url { font-size: 15px; font-weight: 700; letter-spacing: .07em; color: #8fb2cd; }
+  .monogram {
+    position: absolute; top: 58px; right: 72px; z-index: 1;
+    width: 62px; height: 62px; border: 1px solid rgba(255, 255, 255, .32);
+    border-radius: 12px; display: grid; place-items: center;
+    font-size: 16px; font-weight: 900; letter-spacing: .1em;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="monogram">CS</div>
+    <div class="top">
+      <p class="eyebrow">Research portfolio</p>
+      <h1>Chetan Singh</h1>
+      <p class="role">Cyber security leader · Offensive security · Red &amp; purple teaming · AI security</p>
+      <p class="blurb">Published threat research on ransomware, infostealers, APT campaigns, and wiper malware — cited by the U.S. Department of Health and Human Services HC3.</p>
+    </div>
+    <div class="bottom">
+      <p class="stats"><b>10+</b> years <span>·</span> <b>12</b> published analyses <span>·</span> <b>OSCE³</b></p>
+      <p class="url">astraparad0x.github.io</p>
+    </div>
+  </div>
+</body>
+</html>
